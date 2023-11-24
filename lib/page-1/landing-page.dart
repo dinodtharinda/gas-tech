@@ -324,71 +324,7 @@ class Scene extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                // Container(
-                //   // androidstatusbars8gR (102:556)
-                //   margin: EdgeInsets.fromLTRB(16*fem, 0*fem, 16*fem, 73.63*fem),
-                //   width: double.infinity,
-                //   height: 18.75*fem,
-                //   child: Row(
-                //     crossAxisAlignment: CrossAxisAlignment.center,
-                //     children: [
-                //       Container(
-                //         // 3YV (I102:556;9:109)
-                //         margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 236.57*fem, 0*fem),
-                //         width: 30.55*fem,
-                //         height: 8.99*fem,
-                //         child: Image.asset(
-                //           'assets/page-1/images/-ipR.png',
-                //           width: 30.55*fem,
-                //           height: 8.99*fem,
-                //         ),
-                //       ),
-                //       Container(
-                //         // frame1ZFw (I102:556;0:586)
-                //         padding: EdgeInsets.fromLTRB(1.36*fem, 3.38*fem, 1.56*fem, 3.35*fem),
-                //         height: double.infinity,
-                //         child: Row(
-                //           crossAxisAlignment: CrossAxisAlignment.center,
-                //           children: [
-                //             Container(
-                //               // wifisnR (I102:556;0:587)
-                //               margin: EdgeInsets.fromLTRB(0*fem, 1.1*fem, 7.25*fem, 0*fem),
-                //               width: 15.28*fem,
-                //               height: 10.93*fem,
-                //               child: Image.asset(
-                //                 'assets/page-1/images/wifi-fYm.png',
-                //                 width: 15.28*fem,
-                //                 height: 10.93*fem,
-                //               ),
-                //             ),
-                //             Container(
-                //               // frame2109PEy (I102:556;0:589)
-                //               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 8.81*fem, 0.03*fem),
-                //               width: 11*fem,
-                //               height: 12*fem,
-                //               child: Image.asset(
-                //                 'assets/page-1/images/frame-2109-ED7.png',
-                //                 width: 11*fem,
-                //                 height: 12*fem,
-                //               ),
-                //             ),
-                //             Container(
-                //               // batteryHr9 (I102:556;0:594)
-                //               margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 0.03*fem),
-                //               width: 15.63*fem,
-                //               height: 10.94*fem,
-                //               child: Image.asset(
-                //                 'assets/page-1/images/battery-LeM.png',
-                //                 width: 15.63*fem,
-                //                 height: 10.94*fem,
-                //               ),
-                //             ),
-                //           ],
-                //         ),
-                //       ),
-                //     ],
-                //   ),
-                // ),
+               SizedBox(height: MediaQuery.of(context).size.width*0.27,),
                 Container(
                   // frontimageandinfozVf (154:536)
                   margin: EdgeInsets.fromLTRB(0*fem, 0*fem, 0*fem, 99*fem),
@@ -477,15 +413,12 @@ class Scene extends StatelessWidget {
                 Container(
                   // getstartedbuttonCNm (48:24)
                   margin: EdgeInsets.fromLTRB(37*fem, 0*fem, 38*fem, 58*fem),
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.push(
+                  child: GestureDetector(
+                    onTap: (){
+                        Navigator.push(
                         context,
                       MaterialPageRoute(builder: (context) => LoginPage()),);
                     },
-                    style: TextButton.styleFrom (
-                      padding: EdgeInsets.zero,
-                    ),
                     child: Container(
                       width: double.infinity,
                       height: 41*fem,
